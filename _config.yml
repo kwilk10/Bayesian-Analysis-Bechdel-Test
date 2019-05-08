@@ -4,8 +4,8 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://kwilk10.github.io"
-baseurl: ""
+url: "http://kwilk10.github.io/Bayesian-Analysis-Bechdel-Test"
+baseurl: "/Bayesian-Analysis-Bechdel-Test"
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
@@ -23,12 +23,9 @@ description: Project and Personal Page
 
 # List of links in the navigation bar
 navbar-links:
-  Resume: "resume"
-  Programming Projects:
-    - Machine Learning in R: "https://github.com/kwilk10/Machine-Learning-in-R"
-    - Intro to Data Analysis Python: "https://github.com/kwilk10/Data-Analysis-Python"
-    - GitHub Pages: "https://github.com/kwilk10"
- # Author's home: "http://kwilk10.github.io"
+  Resume: "Data Cleaning"
+
+  Author's home: "http://kwilk10.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
