@@ -14,18 +14,22 @@ baseurl: "/Bayesian-Analysis-Bechdel-Test"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Katherine Wilkinson
+title: Bechdel Test- A Bayesian Analysis
 
 # Short description of your site
-description: Project and Personal Page
+description: Project Page
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Data Cleaning: "Data_Cleaning_R"
+  Home: "http://kwilk10.github.io"
+  Report: 
+  Data Cleaning: 
+    - Cleaning and Exploration in R: "Data_Cleaning_R"
+    - Cleaning in Python: "Data_Cleaning_Python
 
-  Author's home: "http://kwilk10.github.io"
+  Models: "Models"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
