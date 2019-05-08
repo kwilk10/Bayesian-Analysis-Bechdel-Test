@@ -25,7 +25,7 @@ description: Project Page
 navbar-links:
   Report: 
   Data Cleaning: 
-    - Cleaning and Exploration in R: "Data_Cleaning_Rmd"
+    - Cleaning and Exploration in R: "Data_Cleaning_R"
     - Cleaning in Python: "Data_Cleaning_Python"
   Models: "Models"
   Home: "http://kwilk10.github.io"
