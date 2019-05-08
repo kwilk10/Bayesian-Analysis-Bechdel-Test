@@ -23,12 +23,12 @@ description: Project Page
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "http://kwilk10.github.io"
   Report: 
   Data Cleaning: 
     - Cleaning and Exploration in R: "Data_Cleaning_Rmd"
     - Cleaning in Python: "Data_Cleaning_Python"
   Models: "Models"
+  Home: "http://kwilk10.github.io"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
