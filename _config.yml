@@ -23,7 +23,7 @@ description: Project Page
 
 # List of links in the navigation bar
 navbar-links:
-  Report: 
+  Report: "Report"
   Data Cleaning: 
     - Cleaning and Exploration in R: "Data_Cleaning_R"
     - Cleaning in Python: "Data_Cleaning_Python"
