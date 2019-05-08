@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 
 subtitle: A Bayesian Analysis of the Bechdel Test in Films
 use-site-title: true
 ---
