@@ -26,7 +26,7 @@ navbar-links:
   Home: "http://kwilk10.github.io"
   Report: 
   Data Cleaning: 
-    - Cleaning and Exploration in R: "Data_Cleaning_R"
+    - Cleaning and Exploration in R: "Data_Cleaning_Rmd"
     - Cleaning in Python: "Data_Cleaning_Python"
   Models: "Models"
 
