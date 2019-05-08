@@ -28,7 +28,6 @@ navbar-links:
   Data Cleaning: 
     - Cleaning and Exploration in R: "Data_Cleaning_R"
     - Cleaning in Python: "Data_Cleaning_Python
-
   Models: "Models"
 
 # Image to show in the navigation bar - image must be a square (width = height)
