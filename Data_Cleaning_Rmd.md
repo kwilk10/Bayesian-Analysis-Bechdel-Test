@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Data Cleaning and Exploration
-author: "Sam Edds, Olivia Hackworth, Katherine Wilkinson"
+title: Data Cleaning and Exploration Code
+subtitle: In R
 use-site-title: true
 ---
 
 
-```{r setup, include=FALSE}
+```r
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, cache = TRUE, eval = FALSE)
 library(data.table); library(knitr); library(kableExtra); library(dplyr); library(ggplot2)
 setwd('/Users/maraudersmap/Desktop/Bayes')
@@ -14,7 +14,7 @@ setwd('/Users/maraudersmap/Desktop/Bayes')
 
 ## Merge Bechdel Data with IMDb Dataset and check 
 
-```{r, cache = TRUE}
+```r
 
 bechdel = fread('all_bechdel.csv')
 keep = c('tconst','primaryTitle','isAdult','startYear',
@@ -37,7 +37,7 @@ bechdel_mv = merge(bechdel, imdb_mv, by = 'tconst')
 
 ##### BarCharts to check top IMDb movies in Bechdel Dataset
 
-```{r}
+```r
 
 ratings = fread('title.ratings.tsv')
 
@@ -123,7 +123,7 @@ ggplot(data = sc_long, aes(x = Decade, y = `Proportion of Movies`, fill = Datase
 
 #### Barcharts to check amount of Bechdel data in IMDb data  
 
-```{r}
+```r
 
 bechdel_pop = sample_check_n[,.(Decade, `Bechdel N`)]
 
@@ -160,7 +160,7 @@ ggplot(data = bechdel_comp_l, aes(x = Decade, y = `Proportion of Movies`,
 
 ## Data
 
-```{r}
+```r
 #original (cleaned) data
 bechdel = read.csv("~/Desktop/Stats 551/bechdel_cleaned.csv")
 bechdel$pass = ifelse(bechdel$rating == 3, 1, 0)
@@ -183,7 +183,7 @@ genre_unique$scale_year <- scale(genre_unique$year)
 
 #### Pass/fail barchart
 
-```{r}
+```r
 plot2 <- ggplot(data = bechdel, aes(pass, fill = as.factor(rating)))+
   geom_bar()+
   theme_linedraw()+
@@ -195,7 +195,7 @@ plot2
 
 #### Pass/Fail Barcharts - by decade
 
-```{r}
+```r
 plot5 <- ggplot(data = bechdel, aes(x = "",fill = as.factor(pass)))+
   geom_bar(position = "fill")+
   theme_linedraw()+
@@ -206,7 +206,7 @@ plot5
 
 #### Proportion By Genre - split by size
 
-```{r}
+```r
 genre_passed %>%
   filter(size == 3)%>%
   ggplot(aes(x = genre, y = perc))+
@@ -243,7 +243,7 @@ genre_passed %>%
 
 #### Prop By Year - recreate bechdel.com plot
 
-```{r}
+```r
 ggplot(bechdel, aes(startYear, fill = as.factor(rating))) +
   geom_histogram(binwidth = 1, position = "fill")+
   theme_linedraw()+
@@ -253,7 +253,7 @@ ggplot(bechdel, aes(startYear, fill = as.factor(rating))) +
 
 #### Genre Counts
 
-```{r}
+```r
 genre_passed2 = genre_passed %>%
   arrange(num)
 plot9 = ggplot(data = genre_passed2, aes(x = genre,y = num))+
@@ -269,7 +269,7 @@ plot9
 
 #### Snapshot of data frame
 
-```{r}
+```r
 snapshot = head(cbind(as.character(bechdel$primaryTitle),
                       bechdel$rating, bechdel$startYear,
                       bechdel$decade, bechdel$Action,
@@ -284,7 +284,7 @@ kable(snapshot,col.names = columnnames)
 
 #### Table of Decade Counts
 
-```{r}
+```r
 columnnames = c("Decade","Movie Count")
 kable(table(bechdel$decade),col.names = columnnames)
 ```
