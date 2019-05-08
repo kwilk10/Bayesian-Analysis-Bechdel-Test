@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About
-subtitle: Bayesian Analysis of the Bechdel Test in Films
+title: A Bayesian Analysis of the Bechdel Test in Films
 use-site-title: true
 ---
 Sam Edds, Olivia Hackworth, Katherine Wilkinson
