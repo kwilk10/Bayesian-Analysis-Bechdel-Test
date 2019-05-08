@@ -23,7 +23,7 @@ description: Project and Personal Page
 
 # List of links in the navigation bar
 navbar-links:
-  Resume: "Data Cleaning"
+  Data Cleaning: "Data_Cleaning_R"
 
   Author's home: "http://kwilk10.github.io"
 
